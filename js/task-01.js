@@ -5,4 +5,9 @@
 // Для виконання цього завдання потрібно використати метод forEach() і властивості навігації по DOM.
 
 const listCat = document.querySelectorAll(`.item`)
-console.dir(listCat.length);
+console.log(`Number of categories: ${listCat.length}`);
+
+listCat.forEach(function(list) {
+    console.log(`Category: ${list.firstElementChild.textContent}`);
+    console.dir(`Elements: ${list.lastElementChild.children.length}`);
+})
