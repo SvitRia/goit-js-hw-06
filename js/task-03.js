@@ -19,8 +19,12 @@ const images = [
 ];
 
 const imageList = document.querySelector(".gallery")
-const list = images.map((image) => `<li><img scr="${image.url}"alt="${image.alt}"></li>`).join("")
+const list = images.map((image) => `<li><img scr="${image.url}"alt="${image.alt}"width="400"h></li>`).join("")
+
 console.dir(list);
 
 imageList.insertAdjacentHTML("afterbegin",list)
+const li = document.querySelectorAll("li")
+console.dir(li);
+li.forEach(() => li.classList.add("list")); 
 console.dir(imageList);

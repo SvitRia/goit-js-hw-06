@@ -12,13 +12,23 @@ const ingredients = [
   'Condiments',
 ];
 
- const ingredientList = document.querySelector('#ingredients')  
+ const ingredientList = document.querySelector('#ingredients')
  
- const list = ingredients.map((ingredient) => `<li class item>${ingredient}</li>`
-  ).join("");
-  console.log(list);
+ ingredients.map ((ingredient) =>{  
+  const li = document.createElement("li");
+  li.textContent = ingredient;
+  li.classList.add("item");
+  ingredientList.append(li)
+ })
 
-  ingredientList.innerHTML = list;
+ 
+
+//  const list = ingredients.map((ingredient) => `<li class item>${ingredient}</li>`
+//   ).join("");
+//   console.log(list);
+
+//   ingredientList.innerHTML = list;
+
 
   console.log(ingredientList);
  
