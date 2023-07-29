@@ -19,7 +19,8 @@ const ingredients = [
   li.textContent = ingredient;
   li.classList.add("item");
   ingredientList.append(li)
- })
+ }
+ )
 
  
 
