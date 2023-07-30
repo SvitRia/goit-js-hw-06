@@ -4,16 +4,11 @@
 // Якщо користувач заповнив усі поля і відправив форму, збери значення полів в об'єкт, де ім'я поля буде ім'ям властивості, а значення поля - значенням властивості. Для доступу до елементів форми використовуй властивість elements.
 // Виведи об'єкт із введеними даними в консоль і очисти значення полів форми методом reset.
 
-// let $input = $('input[name="available.instore"]');
-// console.log($input.val())
-
 const form = document.querySelector(".login-form");
 const email = form.email;
 const password = form.password;
 
-console.dir(form);
-console.log(email);
-console.log(password);
+
 form.addEventListener("submit", onLoginForm)
 
 function onLoginForm(evt) {
