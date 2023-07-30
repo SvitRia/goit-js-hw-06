@@ -8,5 +8,5 @@ console.dir(nameOutput);
 const nameInput = document.querySelector("#name-input")
 nameInput.addEventListener("input", setName)
 function setName(elem) {
-    nameOutput.textContent = nameInput.value.trim() !== "" ? elem.currentTarget.value.trim() : "Anonymous";
+    nameOutput.textContent = nameInput.value.trim()!== "" ? elem.currentTarget.value.trim() : "Anonymous";
 }
