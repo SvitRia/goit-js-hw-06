@@ -13,29 +13,29 @@ const ingredients = [
 ];
 
  const ingredientList = document.querySelector('#ingredients')
-const listLi = [];
- function createLi(ingredients) {
-    for(let i = 0; i < ingredients.length; i += 1) {
-       const li = document.createElement("li");
-       li.textContent = ingredients[i];
-       li.classList.add("item");
-       console.dir(li); 
-       listLi.push(li);
-    }
-    console.dir(listLi);
-    ingredientList.innerHTML = listLi.join("")
- }
- console.dir(createLi(ingredients));
-
-//  ingredients.map ((ingredient) =>{  
-//   const li = document.createElement("li");
-//   li.textContent = ingredient;
-//   li.classList.add("item");
-//   ingredientList.append(li)
-//   console.dir(li)
+// const listLi = [];
+//  function createLi(ingredients) {
+//     for(let i = 0; i < ingredients.length; i += 1) {
+//        const li = document.createElement("li");
+//        li.textContent = ingredients[i];
+//        li.classList.add("item");
+//        console.dir(li); 
+//        listLi.push(li);
+//     }
+//     console.dir(listLi);
+//     ingredientList.innerHTML = listLi.join("")
 //  }
-//  )
- //console.dir(ingredients);
+//  console.dir(createLi(ingredients));
+
+ const item = ingredients.map ((ingredient) =>{  
+  const li = document.createElement("li");
+  li.textContent = ingredient;
+  li.classList.add("item");
+  return li
+ }
+ )
+ ingredientList.append(...item)
+
  
 
  
