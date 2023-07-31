@@ -19,7 +19,7 @@ const images = [
 ];
 
 const imageList = document.querySelector(".gallery")
-const list = images.map((image) => `<li class="picture"><img scr="${image.url}"alt="${image.alt}"width="400"h></li>`).join("")
+const list = images.map((image) => `<li class="picture"><img scr="${image.url}"alt="${image.alt}"width="400"></li>`).join("")
 
 console.dir(list);
 imageList.className = "list"
